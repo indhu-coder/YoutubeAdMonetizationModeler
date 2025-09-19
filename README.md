@@ -1,10 +1,10 @@
-  The YouTube Ad Monetization Modeler aims to predict YouTube ad revenue based on different factors affecting monetization, such as views, engagement rate, video length, content type, and ad types. 
+  The YouTube content Monetization Modeler aims to predict YouTube revenue based on different factors affecting monetization, such as views, engagement rate, video length, content type, and ad types. 
 Using linear regression, the model provides a way to forecast potential earnings for content creators or advertisers.
 This system can help YouTubers or advertisers make data-driven decisions by predicting revenue from various parameters, optimizing the performance of their content or ad campaigns.
 
 Overview
 
-This model predicts YouTube ad revenue (or ad view count) based on video features such as views, likes, comments, duration, etc., via a linear regression algorithm. 
+This model predicts YouTube revenue (or ad view count) based on video features such as views, likes, comments, duration, etc., via a linear regression algorithm. 
 The documentation outlines steps for data preparation, modeling, evaluation, and deployment.
 
 1. Data Preparation
@@ -88,7 +88,7 @@ Metrics:
   ---->Negative Coefficient: If video length has a negative coefficient, it implies that longer videos might decrease the ad revenue.
 
 6. Conclusion
-  The YouTube Ad Monetization Modeler using Linear Regression is a simple yet effective tool for predicting ad revenue.
+  The YouTube content Monetization Modeler using Linear Regression is a simple yet effective tool for predicting ad revenue.
   With proper data preprocessing, model training, and evaluation, this model can be a valuable asset for content creators
   and advertisers in understanding their monetization potential and optimizing their strategies.
 
