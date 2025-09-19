@@ -41,7 +41,30 @@ Libraries:
   
    Linear regression is a statistical method used to model the relationship between a dependent variable (in this case, ad revenue)
    and one or more independent variables (like views, engagement rate, video length, etc.).
-   
+       
+    from sklearn.model_selection import train_test_split
+    from sklearn.linear_model import LinearRegression
+    from sklearn.preprocessing import StandardScaler
+    
+    # Data Preprocessing
+    X = data[['views', 'engagement_rate', 'video_length', 'ad_type']]
+    Y = data['ad_revenue']
+    
+    # Split data into training and testing sets
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+    
+    # Feature Scaling
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+    
+    # Linear Regression Model
+    model = LinearRegression()
+    model.fit(X_train, Y_train)
+    
+    # Predicting on Test Data
+    predictions = model.predict(X_test)
+
    
    Alternative Models: If linear regression doesn’t produce satisfactory results,
                        more advanced models like decision trees, random forests, or gradient boosting could be explored.
