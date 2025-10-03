@@ -47,8 +47,8 @@ Libraries:
     from sklearn.preprocessing import StandardScaler
     
     # Data Preprocessing
-    X = data[['views', 'engagement_rate', 'video_length', 'ad_type']]
-    Y = data['ad_revenue']
+    X = data.drop('ad_revenue_usd',axis=1)
+    Y = data['ad_revenue_usd']
     
     # Split data into training and testing sets
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
