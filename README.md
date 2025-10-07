@@ -92,3 +92,5 @@ Metrics:
   With proper data preprocessing, model training, and evaluation, this model can be a valuable asset for content creators
   and advertisers in understanding their monetization potential and optimizing their strategies.
 
+Streamlit application has been created for this Linear regression model where the user inputs and prediction(pdf) has been shared in this repository.
+
