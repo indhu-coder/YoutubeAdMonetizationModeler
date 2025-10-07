@@ -166,7 +166,7 @@ try:
     print("Intercept:", model5.intercept_)
     
     #Freezing ridge model for the application so pickling the file
-    ridge_model = model3
+    ridge_model = model1
     with open('ridge_model.pkl','wb') as file:
       pickle.dump(ridge_model,file)
     feature_names = X.columns.to_list()
@@ -176,6 +176,7 @@ try:
       pickle.dump(scaler, f)
 except Exception as e:
    print("Error",e)
+
 
 
 
